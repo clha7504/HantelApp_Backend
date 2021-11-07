@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Functions and Variables Example</title>
+</head>
+
+<body>
+    <h4>Events</h4>
+    <!-- Events example -->
+    <p>Last Event: <span id="lastevent"></span></p>
+    <p>TrainingStarted (Event): <span id="TrainingStarted"></span></p>
+    <p>TrainingEnded (Event): <span id="TrainingEnded"></span></p>
+    <p>Anzahl Hantelzüge (Event): <span id="Hantelzüge"></span></p>
+    <p>Kadenz (Event): <span id="Kadenz"></span></p>
+    <p>Dauer (Event): <span id="Dauer"></span></p>
+
+    <hr>
+    <h4>Variables</h4>
+    <!-- Read variables example -->
+    <p>Anzahl (Variable): <span id="Anzahl"></span></p>
+    <button onclick="getAnzahl()">Get Anzahl</button>
+    <p>Kadenz (Variable): <span id="Kadenz1"></span></p>
+    <button onclick="getCounter()">Get Kadenz</button>
+    <br>
+
+    <hr>
+    <h4>Functions</h4>
+    <!-- Call functions example  -->
+    <p>Set Counter</p>
+    <input type="number" id="counterinput" value="0">
+    <button onclick="setCounter()">Set counter</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="hantelApp.js"></script>
+</body>
+
+</html>
